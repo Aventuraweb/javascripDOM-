@@ -1,0 +1,135 @@
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: rgb(244, 220, 221);
+    padding: 20px;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu .menu-toggle {
+    display: none; /* Ocultar por defecto */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu .menu-toggle img {
+    border: 1px solid #040404;
+    border-radius: 5px;
+}
+
+.menu-links {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.img-container{
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    padding: 10px; 
+}
+
+.imagen{
+   border: #f7dcdc solid;
+   border-radius: 10px;
+   width: 40%;
+   height: auto;
+   margin: 0 10px;
+   
+
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-weight: 100px;
+    font-size: 18px;
+}
+
+.boton-container{
+    display: flex; 
+    justify-content: center; 
+    padding: 10px;
+}
+
+.boton {
+    background-color: #f7dcdc; 
+    border: 2px solid #f0bcbc; 
+    border-radius: 10px; 
+    color: #333; 
+    font-size: 16px; 
+    font-weight: bold; 
+    padding: 10px 30px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    width: auto; 
+    margin: 0;
+    text-align: center; 
+}
+
+.boton:hover {
+    background-color: #e7c7c7; 
+}
+
+.boton:active {
+    background-color: #d7b7b7; 
+}
+
+.boton:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(247, 220, 220, 0.5); 
+}
+
+
+@media (max-width: 600px) {
+    .menu .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .menu-links {
+        display: none; 
+        flex-direction: column;
+        background-color: #fff;
+        border: 1px solid #0e0e0e;
+        width: 85%;
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        z-index: 1000;
+        margin: 100px 30px;
+        padding: 20px 10px;
+    }
+
+    .menu-links.show {
+        display: flex; 
+    }
+
+    .texto{
+        width: 100%;
+        text-align: center;
+         
+    }
+}
+
+
